@@ -1,0 +1,69 @@
+header {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #c52f24;
+}
+
+footer {
+  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #c52f24;
+  bottom: 0;
+}
+
+title {
+  font-size: 20px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table th {
+  background-color: #ffdfdf;
+  padding: 10px 20px;
+  border: solid 1px;
+}
+
+table td {
+  background-color: #f1c8c861;
+  padding: 10px 20px;
+  border: solid 1px;
+}
+
+.notice {
+  background-color: #98ecaa;
+  border: 2px solid #5cd075;
+  padding: 15px;
+  width: 400px;
+  text-align: center;
+}
+
+.warning {
+  background-color: #FEF9A7;
+  border: 2px solid #FAC213;
+  padding: 15px;
+  width: 400px;
+  text-align: center;
+}
+
+.alert {
+  background-color: #ec98ac8f;
+  border: 2px solid #ec7592;
+  padding: 15px;
+  width: 400px;
+  text-align: center;
+}
+
+.memo {
+  height: 200px;
+}
+
+.title {
+  font-size: 25px;
+}

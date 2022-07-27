@@ -1,0 +1,39 @@
+<h3 class="title">スケジュール編集</h3>
+
+<%= form_with model: @schedule do |f| %>
+
+ <table>
+  <tr>
+   <th><%= f.label :title ,"タイトル" %></th>
+   <td><%= f.text_field :title, style: "width:100%" %></td>
+  </tr>
+ 
+  <tr>
+   <th><%= f.label :startDate ,"開始日" %></th>
+   <td><%= f.date_field :startDate, style: "width:100%" %></td>
+  </tr>
+ 
+  <tr>
+   <th><%= f.label :endDate ,"終了日" %></th>
+   <td><%= f.date_field :endDate, style: "width:100%" %></td>
+  </tr>
+ 
+  <tr>
+   <th><%= f.label :allDay ,"終日" %></th>
+   <td align="center"><%= f.check_box :allDay %><br>
+   終日の場合はチェックを入れます</td>
+  </tr>
+ 
+  <tr>
+   <th class="memo"><%= f.label :memo ,"スケジュールメモ" %></th>
+   <td><%= f.text_area :memo, style: "height: 200px; width:100%" %></td>
+  </tr>
+ </table>
+
+ <div>
+  <ul style="list-style: none;" >
+   <li><%= f.submit "スケジュールの編集を完了する", style: "font-size: 15px" %></li>
+   <li><%= link_to "スケジュール一覧に戻る", :schedules %></li>
+  </ul>
+ </div>
+<% end %>
